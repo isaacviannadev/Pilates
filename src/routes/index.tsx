@@ -6,7 +6,7 @@ import Dashboard from "../pages/Dashboard";
 const Routes: React.FC = () => (
 
   <Switch>
-    <Route path="/" exact component={Dashboard} />
+    <Route path="/" component={Dashboard} />
 
   </Switch>
 )

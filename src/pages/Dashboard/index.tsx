@@ -1,7 +1,14 @@
-import React from 'react';
+import React from "react";
+import Menu from "../../components/menu";
 
 const Dashboard: React.FC = () => {
-  return <h1>Dshboard</h1>
+  return (
+    <>
+      <Menu />
+      <h1>Dashboard</h1>
+      
+    </>
+  );
 };
 
 export default Dashboard;
