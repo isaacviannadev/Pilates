@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { FiCoffee, FiShoppingCart, FiChevronDown } from "react-icons/fi";
 import { IoIosFitness } from "react-icons/io";
@@ -8,8 +8,10 @@ import { Container } from "./style";
 import LogoImg from "../../assets/logo.png";
 import UserImg from "../../assets/isaac.jpg";
 
-const Menu: React.FC = () => (
-  <>
+const Menu: React.FC = () => {
+
+
+  return (
     <Container>
       <div className="menu-logo">
         <img src={LogoImg} alt="Studio Cleo Fernandes" />
@@ -41,11 +43,14 @@ const Menu: React.FC = () => (
               <strong>Isaac</strong>
               <FiChevronDown />
             </div>
+
+            <ul>
+              
+            </ul>
           </div>
         </div>
       </div>
     </Container>
-  </>
-);
-
+  );
+};
 export default Menu;
