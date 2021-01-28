@@ -5,14 +5,14 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
   width: 100%;
-
-  /* height: 600px; */
-  background-color: #fff1ff;
+  margin-bottom: 60px;
+ 
 
   .container {
     width: 100%;
     max-width: 1100px;
-    padding: 20px;
+    height: 600px;
+    padding: 0 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,25 +22,35 @@ export const Container = styled.section`
     width: 100%;
     max-width: 600px;
 
-    h1{
+    h1 {
       width: 100%;
-      max-width:420px;
+      max-width: 420px;
       line-height: 50px;
-      font-size:40px;
+      font-size: 40px;
+      margin-bottom: 40px;
 
       strong {
         color: #75a446;
       }
+    }
 
-      span {
-        font-size: 16px;
-        font-weight:normal;
-      }
+    span {
+      font-size: 16px;
+    }
+
+    button {
+      margin-top:40px;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      width:200px;
+      background-color: #75a446;
+      color: #fff;
     }
   }
 
   .content-img img {
     width: 100%;
-    max-width: 700px;
+    max-width: 1000px;
   }
 `;

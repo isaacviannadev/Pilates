@@ -19,11 +19,13 @@ const Intro: React.FC = () => {
               <strong>gostoso</strong>?
               <Typist.Backspace count={8} delay={200} />
               <strong>melhor</strong>?
-              <br/>
-              <Typist.Delay ms={700} />
-              <span>Venha conhecer nosso espaço!</span>
             </Typist>
           </h1>
+
+          <span>Venha conhecer nosso espaço!</span>
+          <div className="button">
+            <button type="button">Conhecer</button>
+          </div>
         </div>
 
         <div className="content-img">
