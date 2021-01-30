@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { FiCoffee, FiShoppingCart, FiChevronDown } from "react-icons/fi";
 import { IoIosFitness } from "react-icons/io";
@@ -9,8 +9,6 @@ import LogoImg from "../../assets/logo.png";
 import UserImg from "../../assets/isaac.jpg";
 
 const Menu: React.FC = () => {
-
-
   return (
     <Container>
       <div className="menu-logo">
@@ -18,14 +16,13 @@ const Menu: React.FC = () => {
       </div>
 
       <div className="menu-options">
-        <a href="#">
-          <FiCoffee />
-          Café
-        </a>
-
-        <a href="#">
+        <a href="#pilates">
           <IoIosFitness />
           Pilates
+        </a>
+        <a href="#coffee">
+          <FiCoffee />
+          Café
         </a>
       </div>
 
@@ -44,9 +41,7 @@ const Menu: React.FC = () => {
               <FiChevronDown />
             </div>
 
-            <ul>
-              
-            </ul>
+            <ul></ul>
           </div>
         </div>
       </div>

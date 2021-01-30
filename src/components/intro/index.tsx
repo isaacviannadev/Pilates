@@ -24,7 +24,7 @@ const Intro: React.FC = () => {
 
           <span>Venha conhecer nosso espaço!</span>
           <div className="button">
-            <button type="button">Conhecer</button>
+            <button type="button" className="btn-grad">Conhecer</button>
           </div>
         </div>
 
@@ -35,5 +35,7 @@ const Intro: React.FC = () => {
     </Container>
   );
 };
+
+
 
 export default Intro;

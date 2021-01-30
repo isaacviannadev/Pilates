@@ -6,7 +6,6 @@ export const Container = styled.section`
   justify-content: center;
   width: 100%;
   margin-bottom: 60px;
- 
 
   .container {
     width: 100%;
@@ -38,14 +37,26 @@ export const Container = styled.section`
       font-size: 16px;
     }
 
-    button {
-      margin-top:40px;
-      padding: 10px;
+    .btn-grad {
+      background-image: linear-gradient(
+        to right,
+        #16a085 0%,
+        #faeaa9 51%,
+        #16a085 100%
+      );
+      margin-top: 40px;
       border: none;
+      width: 200px;
+      padding: 10px;
+      transition: 0.5s;
+      background-size: 200% auto;
+      color: white;
       border-radius: 20px;
-      width:200px;
-      background-color: #75a446;
-      color: #fff;
+      display: block;
+      
+      &:hover {
+        background-position: right center; /* change the direction of the change here */
+      }
     }
   }
 
