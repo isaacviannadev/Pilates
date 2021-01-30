@@ -5,12 +5,12 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 
   .container {
     width: 100%;
     max-width: 1100px;
-    height: 600px;
+    height: 500px;
     padding: 0 80px;
     display: flex;
     align-items: center;
@@ -20,6 +20,7 @@ export const Container = styled.section`
   .content-info {
     width: 100%;
     max-width: 600px;
+    z-index: 2;
 
     h1 {
       width: 100%;
@@ -53,15 +54,34 @@ export const Container = styled.section`
       color: white;
       border-radius: 20px;
       display: block;
-      
+
       &:hover {
         background-position: right center; /* change the direction of the change here */
       }
     }
   }
 
-  .content-img img {
+  .container .content-img {
     width: 100%;
     max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    img {
+      position: absolute;
+      width: 100%;
+      max-width: 46em;
+      top: 120px;
+      right: 0;
+      margin-inline: 5%;
+      border-radius: 0 0 50% 50%;
+      opacity: 0.7;
+      border-bottom: 20px solid #fff;
+
+      transition: 1s ease-in-out;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 `;
