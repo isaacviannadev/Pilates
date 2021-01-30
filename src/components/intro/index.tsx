@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "./style";
 import Typist from "react-typist";
 
-import PilatesImg from "../../assets/pilates.svg";
+import PilatesImg from "../../assets/pilates2.jpg";
 
 const Intro: React.FC = () => {
   return (
@@ -12,13 +12,13 @@ const Intro: React.FC = () => {
           <h1>
             Quer deixar seu dia
             <Typist>
-              <strong>perfeito</strong>?
-              <Typist.Backspace count={9} delay={200} />
+              <strong>melhor</strong>?
+              <Typist.Backspace count={7} delay={200} />
               <strong>leve</strong>?
               <Typist.Backspace count={5} delay={200} />
               <strong>gostoso</strong>?
               <Typist.Backspace count={8} delay={200} />
-              <strong>melhor</strong>?
+              <strong>perfeito</strong>?
             </Typist>
           </h1>
 
