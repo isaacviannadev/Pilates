@@ -8,7 +8,6 @@ export const Container = styled.div`
   padding: 0 20px;
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
-
   position: relative;
 
   .menu-logo img {
@@ -38,9 +37,29 @@ export const Container = styled.div`
       padding: 15px;
 
       transition: all 0.3s;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 77px;
+        left: 0;
+        opacity: 0;
+        width: 0px;
+        height: 3px;
+        border-radius: 8px;
+        background-color: #d96d2d;
+        transition: .7s ease;
+      }
 
       &:hover {
         color: #83b551;
+
+      &::after {
+        width: 122px;
+        opacity: 1;
+      }
 
         svg {
           color: #d96d2d;

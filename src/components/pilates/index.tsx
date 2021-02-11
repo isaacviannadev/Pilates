@@ -11,6 +11,7 @@ const Pilates: React.FC = () => {
       <div className="content">
         <Tilt
           className="img"
+          options={{ scale: 2, glare: true }}
           style={{
             width: "440px",
             padding: "0",
@@ -22,17 +23,17 @@ const Pilates: React.FC = () => {
             <img src={pilatesImg} alt="" />
           </div>
         </Tilt>
-          <div className="infos">
-            <h1> Conhece os benefícios do Pilates?</h1>
-            <p>
-              Conheça nossa estrutura, nossos profissionais fisioterapeutas,
-              nossos serviços extras e opcionais, e venha fazer uma aula
-              experimental grátis!
-            </p>
-            <button type="button" className="btn-grad">
-              Quero Saber Mais!
-            </button>
-          </div>
+        <div className="infos">
+          <h1> Conhece os benefícios do Pilates?</h1>
+          <p>
+            Conheça nossa estrutura, nossos profissionais fisioterapeutas,
+            nossos serviços extras e opcionais, e venha fazer uma aula
+            experimental grátis!
+          </p>
+          <button type="button" className="btn-grad">
+            Quero Saber Mais!
+          </button>
+        </div>
       </div>
     </Container>
   );

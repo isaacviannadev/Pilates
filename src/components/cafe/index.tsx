@@ -23,7 +23,7 @@ const Coffee: React.FC = () => {
           </button>
         </div>
         <div className="coffeeCards">
-          <Tilt
+          <Tilt 
             style={{
               width: "250px",
               padding: "0",

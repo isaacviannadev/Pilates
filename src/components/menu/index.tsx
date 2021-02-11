@@ -16,11 +16,11 @@ const Menu: React.FC = () => {
       </div>
 
       <div className="menu-options">
-        <a href="#pilates">
+        <a className="btn" href="#pilates">
           <IoIosFitness />
           Pilates
         </a>
-        <a href="#coffee">
+        <a className="btn" href="#coffee">
           <FiCoffee />
           Café
         </a>
