@@ -5,13 +5,14 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 700px;
   margin-bottom: 20px;
 
   .container {
     width: 100%;
     max-width: 1100px;
-    height: 500px;
-    padding: 0 80px;
+    height: 100%;
+    padding: 0 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,7 +21,6 @@ export const Container = styled.section`
   .content-info {
     width: 100%;
     max-width: 600px;
-    z-index: 2;
 
     h1 {
       width: 100%;
@@ -61,27 +61,65 @@ export const Container = styled.section`
     }
   }
 
-  .container .content-img {
+  .content-img {
     width: 100%;
-    max-width: 1000px;
-    background-color: rgba(255, 255, 255, 0.9);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-intro {
+    width: 100%;
+    height: 100%;
+
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      top: 200px;
+      left: 0;
+      border-radius: 50%;
+      box-shadow: 2px 5px 6px rgba(217, 109, 45, 0.7);
+
+      background: radial-gradient(
+        61.19% 61.19% at 31.39% 27.74%,
+        #fbad7e 0%,
+        #d96d2d 69.27%
+      );
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      top: 25px;
+      left: -50px;
+      border-radius: 50%;
+      box-shadow: 2px 4px 8px rgba(117, 164, 70, 0.2);
+
+      background: radial-gradient(
+        61.19% 61.19% at 31.39% 27.74%,
+        #adde22 0%,
+        #3a9919 97.61%
+      );
+    }
+
 
     img {
-      position: absolute;
-      width: 100%;
-      max-width: 46em;
-      top: 120px;
-      right: 0;
-      margin-inline: 5%;
-      border-radius: 0 0 50% 50%;
-      opacity: 0.7;
-      border-bottom: 20px solid #fff;
-
-      transition: 1s ease-in-out;
-
-      &:hover {
-        opacity: 1;
-      }
+      margin: 20px auto;
+      overflow: none;
+      display: block;
+      width: 110%;
+      max-width: 700px;
     }
   }
 `;

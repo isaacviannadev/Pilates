@@ -2,24 +2,47 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 120px;
-  background-color: transparent;
   display: flex;
   align-items: center;
-  padding: 0 20px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 1);
   backdrop-filter: blur(5px);
   position: relative;
 
-  .menu-logo img {
-    left: 30px;
-    position: absolute;
-    top: 10px;
+  .navbar {
+    margin: 8px;
+    padding: 0 20px;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-options {
+    width: 100%;
+
+    height: 100%;
+    max-width: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .menu-logo {
     height: 100px;
+    width: 360px;
+    display: flex;
+    padding: 8px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   div.menu-options {
     display: flex;
-    position: absolute;
     right: 260px;
 
     a {
@@ -36,7 +59,7 @@ export const Container = styled.div`
       width: 120px;
       padding: 15px;
 
-      transition: all 0.3s;
+      transition: 0.7s ease;
       position: relative;
 
       &::after {
@@ -50,16 +73,17 @@ export const Container = styled.div`
         height: 3px;
         border-radius: 8px;
         background-color: #d96d2d;
-        transition: .7s ease;
+        transition: 0.7s ease;
+        z-index: 999;
       }
 
       &:hover {
         color: #83b551;
 
-      &::after {
-        width: 122px;
-        opacity: 1;
-      }
+        &::after {
+          width: 122px;
+          opacity: 1;
+        }
 
         svg {
           color: #d96d2d;
@@ -68,6 +92,10 @@ export const Container = styled.div`
 
       &:focus {
         color: #d96d2d;
+        &::after {
+          width: 122px;
+          opacity: 1;
+        }
 
         svg {
           color: #75a446;
@@ -82,7 +110,6 @@ export const Container = styled.div`
 
   .menu-login {
     display: flex;
-    position: absolute;
     right: 10px;
     width: 100%;
     max-width: 180px;
@@ -142,7 +169,7 @@ export const Container = styled.div`
 
       &:hover {
         color: #d96d2d;
-        box-shadow: 1px 1px 2px #c9c9c9;
+        box-shadow: 1px 1px 3px #c9c9c9;
       }
     }
   }

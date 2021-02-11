@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "./style";
 import Typist from "react-typist";
 
-import PilatesImg from "../../assets/pilates2.jpg";
+import PilatesImg from "../../assets/pilates-sobre.png";
 
 const Intro: React.FC = () => {
   return (
@@ -24,18 +24,20 @@ const Intro: React.FC = () => {
 
           <span>Venha conhecer nosso espaço!</span>
           <div className="button">
-            <button type="button" className="btn-grad">Conhecer</button>
+            <button type="button" className="btn-grad">
+              Conhecer
+            </button>
           </div>
         </div>
 
         <div className="content-img">
-          <img src={PilatesImg} alt="Pilates" />
+            <div className="img-intro">
+              <img src={PilatesImg} alt="Pilates" />
+            </div>
         </div>
       </div>
     </Container>
   );
 };
-
-
 
 export default Intro;
