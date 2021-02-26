@@ -14,7 +14,7 @@ const Intro: React.FC = () => {
             <div>
               <Typist
                 className="typist"
-                sentences={["melhor", "leve", "gostoso", "perfeito"]}
+                sentences={["melhor?", "mais leve?", "gostoso?", "perfeito?"]}
                 loop={true}
                 cursorSmooth={true}
                 cursorColor="#d96d2d"
