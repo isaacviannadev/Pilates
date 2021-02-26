@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "./style";
-import Typist from "react-typist";
+import Typist from "react-text-typist";
 
 import PilatesImg from "../../assets/pilates-sobre.png";
 
@@ -11,15 +11,16 @@ const Intro: React.FC = () => {
         <div className="content-info">
           <h1>
             Quer deixar seu dia
-            <Typist>
-              <strong>melhor</strong>?
-              <Typist.Backspace count={7} delay={200} />
-              <strong>leve</strong>?
-              <Typist.Backspace count={5} delay={200} />
-              <strong>gostoso</strong>?
-              <Typist.Backspace count={8} delay={200} />
-              <strong>perfeito</strong>?
-            </Typist>
+            <div>
+              <Typist
+                className="typist"
+                sentences={["melhor", "leve", "gostoso", "perfeito"]}
+                loop={true}
+                cursorSmooth={true}
+                cursorColor="#d96d2d"
+                pauseTime={2000}
+              />
+            </div>
           </h1>
 
           <span>Venha conhecer nosso espaço!</span>
@@ -31,9 +32,9 @@ const Intro: React.FC = () => {
         </div>
 
         <div className="content-img">
-            <div className="img-intro">
-              <img src={PilatesImg} alt="Pilates" />
-            </div>
+          <div className="img-intro">
+            <img src={PilatesImg} alt="Pilates" />
+          </div>
         </div>
       </div>
     </Container>

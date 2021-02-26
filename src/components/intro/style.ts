@@ -29,8 +29,12 @@ export const Container = styled.section`
       font-size: 40px;
       margin-bottom: 40px;
 
-      strong {
+      div {
         color: #75a446;
+
+        .typist {
+          font-size: 40px;
+        }
       }
     }
 
@@ -112,7 +116,6 @@ export const Container = styled.section`
         #3a9919 97.61%
       );
     }
-
 
     img {
       margin: 20px auto;
